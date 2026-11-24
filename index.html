@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10132e">
+<title>Настюша — 20 лет ✦</title>
+<style>
+:root{--bg:#10132e;--bg2:#20234b;--lav:#d9d2ff;--pink:#f1c8df;--gold:#f2dba9;--muted:#c5c0df;--glass:rgba(255,255,255,.075);--line:rgba(231,222,255,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:#fbf8ff;font-family:Georgia,"Times New Roman",serif;background:radial-gradient(ellipse at 50% -10%,#3c3a70 0%,#20234b 37%,#10132e 80%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.34;background-image:radial-gradient(#fff .7px,transparent .9px),radial-gradient(#d9d2ff .8px,transparent 1px);background-size:73px 73px,113px 113px;background-position:0 0,35px 42px;z-index:0}
+#sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px #d9d2ff88;animation:twinkle var(--dur) ease-in-out infinite alternate}
+.shooting{position:absolute;width:110px;height:1px;background:linear-gradient(90deg,#fff,transparent);transform:rotate(-35deg);opacity:0;animation:shoot 10s linear infinite}
+.moon{position:absolute;right:11%;top:104px;width:88px;height:88px;border-radius:50%;background:#fff0c9;box-shadow:0 0 28px #ffe8b477,0 0 90px #d8c9ff33}
+.moon:after{content:"";position:absolute;width:79px;height:79px;border-radius:50%;background:#282951;top:-8px;left:22px}
+.wrap{position:relative;z-index:1;width:min(960px,calc(100% - 34px));margin:auto;padding:25px 0 48px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#d7d0fa}
+.brand:before{content:"✦";color:var(--gold);margin-right:9px}
+.music{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:#ffffff0d;color:#f8efff;border-radius:99px;padding:10px 14px;font:11px Arial,sans-serif;cursor:pointer;backdrop-filter:blur(10px)}
+.music .dot{width:7px;height:7px;border-radius:50%;background:#d9c8ff;box-shadow:0 0 9px #d9c8ff}
+main{padding:74px 0 25px}
+.hero,.panel{background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.045));border:1px solid var(--line);box-shadow:0 22px 80px #07091e66;backdrop-filter:blur(13px);border-radius:28px}
+.hero{text-align:center;padding:clamp(35px,7vw,70px) 22px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:12px;border:1px solid #ffffff12;border-radius:21px;pointer-events:none}
+.kicker{font:10px Arial,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(46px,9vw,88px);line-height:.98;font-weight:400;margin:20px 0 6px;color:#fff9ff;text-shadow:0 0 35px #e4d5ff33}
+h1 em{color:var(--pink);font-weight:400}
+.age{font-size:clamp(68px,12vw,112px);line-height:1;color:#e5d8ff;text-shadow:0 0 35px #c9b7ff66;margin:12px 0 7px}
+.intro{max-width:570px;margin:0 auto;color:var(--muted);font-size:17px;line-height:1.8}
+.orbit{font-size:30px;margin:18px 0 4px;color:var(--gold);letter-spacing:.35em}
+.countdown{display:flex;justify-content:center;gap:9px;margin:25px auto 0;max-width:440px;flex-wrap:wrap}
+.timebox{min-width:75px;padding:12px 10px;border:1px solid var(--line);border-radius:15px;background:#ffffff09}
+.timebox b{display:block;font-size:27px;font-weight:400;color:#f2d9ec;font-variant-numeric:tabular-nums}.timebox small{font:9px Arial,sans-serif;letter-spacing:.13em;color:#bcb5d9;text-transform:uppercase}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:25px}
+.btn{border:1px solid #ffffff22;border-radius:99px;padding:13px 21px;background:linear-gradient(120deg,#b9a6e9,#d18eae);color:#211c3d;font:600 12px Arial,sans-serif;letter-spacing:.04em;cursor:pointer;box-shadow:0 8px 24px #bda4ed33;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px #bda4ed55}.btn.secondary{background:#ffffff0b;color:#f8efff;border-color:var(--line);box-shadow:none}
+.panel{margin-top:21px;padding:clamp(24px,5vw,42px);text-align:center}
+.section-label{font:10px Arial,sans-serif;letter-spacing:.27em;text-transform:uppercase;color:var(--gold)}
+h2{font-size:clamp(28px,5vw,40px);font-weight:400;margin:12px 0;color:#f8eafa}
+.panel-intro{color:var(--muted);font-size:15px;line-height:1.75;max-width:620px;margin:0 auto 20px}
+.letter{display:none;text-align:left;max-width:680px;margin:22px auto 0;padding-top:22px;border-top:1px solid var(--line);animation:fade .7s ease}
+.letter.show{display:block}.letter p{font-size:17px;line-height:1.95;color:#e5def4;margin:0 0 15px}.sign{text-align:right!important;color:var(--pink)!important;font-style:italic;font-size:21px!important;margin-top:20px!important}
+.envelope{font-size:47px;margin:12px auto 4px;filter:drop-shadow(0 0 16px #e3b9e955)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:24px}
+.photo{position:relative;min-height:205px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#625b91,#a779a3 50%,#e4b8c7);display:flex;align-items:center;justify-content:center}
+.photo:nth-child(2){background:linear-gradient(145deg,#394d78,#8879ad 55%,#d7b6d0)}.photo:nth-child(3){background:linear-gradient(145deg,#675b8d,#b88da9 55%,#f0d1cf)}
+.photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;display:block}
+.photo .placeholder{padding:18px;text-align:center;color:#fff;font:12px/1.6 Arial,sans-serif;letter-spacing:.04em;text-shadow:0 2px 8px #30204466}
+.photo .placeholder b{display:block;font:30px Georgia,serif;margin-bottom:8px}
+.gallery-note{font:11px/1.6 Arial,sans-serif;color:#aaa4c9;margin:14px auto 0;max-width:650px}
+.cake{font-size:64px;margin:13px 0 5px;filter:drop-shadow(0 0 15px #f0c4df44)}
+.candle-row{display:flex;justify-content:center;gap:5px;flex-wrap:wrap;max-width:450px;margin:17px auto}
+.candle{width:9px;height:31px;border-radius:5px 5px 2px 2px;background:linear-gradient(90deg,#f5c8d9,#fff0d2);position:relative;box-shadow:0 0 8px #f4cce655}
+.candle:before{content:"";position:absolute;width:8px;height:12px;border-radius:70% 30% 60% 40%;background:#ffd98c;top:-13px;left:1px;box-shadow:0 0 13px #ffd98c;animation:flicker .65s infinite alternate}
+.candle.out:before{display:none}
+.footer{text-align:center;color:#aaa3c8;font:9px Arial,sans-serif;letter-spacing:.22em;padding-top:28px}
+.float{position:fixed;bottom:-35px;pointer-events:none;z-index:4;animation:floatUp linear forwards;opacity:0}
+@keyframes twinkle{from{opacity:.2;transform:scale(.7)}to{opacity:1;transform:scale(1.3)}}@keyframes shoot{0%,75%{opacity:0;transform:translate(0,0) rotate(-35deg)}78%{opacity:.8}85%{opacity:0;transform:translate(-260px,180px) rotate(-35deg)}100%{opacity:0}}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes floatUp{0%{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.8}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@keyframes flicker{from{transform:scale(.85) rotate(-5deg);opacity:.8}to{transform:scale(1.12) rotate(5deg);opacity:1}}
+@media(max-width:650px){.moon{width:58px;height:58px;top:85px;right:8%}.moon:after{width:53px;height:53px;left:15px;top:-6px}main{padding-top:55px}.gallery{grid-template-columns:1fr}.photo{min-height:235px}.timebox{min-width:67px}.intro{font-size:15px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div><div class="moon" aria-hidden="true"></div>
+<div class="wrap">
+<header><div class="brand">A little universe for you</div><button class="music" id="musicBtn" type="button" aria-pressed="false"><span class="dot"></span><span id="musicText">Включить музыку</span> ♫</button></header>
+<main>
+<section class="hero">
+<div class="kicker">25 ноября · особенный день</div>
+<h1>С днём <em>рождения,</em><br>Настюша</h1>
+<div class="age">20</div>
+<p class="intro">Целая новая глава начинается под твоей звездой. Пусть в ней будет больше света, нежности, счастливых совпадений и мгновений, которые хочется остановить.</p>
+<div class="orbit">✧　☾　✧</div>
+<div class="countdown" id="countdown" aria-live="polite">
+<div class="timebox"><b id="days">--</b><small>дней</small></div><div class="timebox"><b id="hours">--</b><small>часов</small></div><div class="timebox"><b id="minutes">--</b><small>минут</small></div><div class="timebox"><b id="seconds">--</b><small>секунд</small></div>
+</div>
+<div class="actions"><button class="btn" id="openLetter">Открыть личное письмо ✧</button><button class="btn secondary" id="wishBtn">Загадай желание</button></div>
+</section>
+
+<section class="panel" id="message">
+<div class="section-label">Несколько слов для тебя</div><h2>Пусть сбывается хорошее</h2>
+<p class="panel-intro">Желаю тебе спокойствия внутри, вдохновения в каждом новом дне и людей, рядом с которыми можно быть собой. Пусть мечты не теряются среди повседневности, а жизнь чаще удивляет приятным.</p>
+<div class="envelope">💌</div>
+<article class="letter" id="letter">
+<p>Настюша, поздравляю тебя с 20-летием! От всей души хочу пожелать тебе настоящего счастья, душевного спокойствия и как можно больше поводов улыбаться.</p>
+<p>Пусть в твоей жизни всегда будет место для любви, тепла, искренних чувств и приятных неожиданностей. Пусть рядом остаются люди, с которыми можно быть собой, делиться самым сокровенным, смеяться до слёз и просто чувствовать себя счастливой.</p>
+<p>Желаю тебе никогда не терять веру в себя, смело идти навстречу своим мечтам и не бояться открывать для себя что-то новое. Пусть даже самые маленькие моменты становятся особенными, желания постепенно превращаются в реальность, а впереди ждёт гораздо больше прекрасного, чем ты можешь себе представить.</p>
+<p>Пусть судьба бережёт тебя от всего плохого, дарит приятные встречи, незабываемые воспоминания и людей, которые будут искренне дорожить тобой. Оставайся такой же замечательной, искренней и неповторимой. Будь любима, здорова и по-настоящему счастлива.</p>
+<p class="sign">С днём рождения! ♡</p>
+</article>
+</section>
+
+<section class="panel">
+<div class="section-label">Маленькая галерея</div><h2>Моменты, которые хочется сохранить</h2>
+<p class="panel-intro">Здесь можно разместить любимые фотографии Настюши. Сейчас стоят аккуратные заглушки - замени их своими снимками, когда будешь готов.</p>
+<div class="gallery">
+<div class="photo"><div class="placeholder"><b>✧</b>Фото №1<br>добавь файл photos/photo1.jpg</div><img src="photos/photo1.jpg" alt="Фотография 1" onerror="this.style.display='none'"></div>
+<div class="photo"><div class="placeholder"><b>☾</b>Фото №2<br>добавь файл photos/photo2.jpg</div><img src="photos/photo2.jpg" alt="Фотография 2" onerror="this.style.display='none'"></div>
+<div class="photo"><div class="placeholder"><b>✦</b>Фото №3<br>добавь файл photos/photo3.jpg</div><img src="photos/photo3.jpg" alt="Фотография 3" onerror="this.style.display='none'"></div>
+</div>
+<p class="gallery-note">Чтобы добавить фотографии: положи изображения в папку photos и назови их photo1.jpg, photo2.jpg и photo3.jpg. Можно использовать PNG - тогда поменяй расширение в index.html.</p>
+</section>
+
+<section class="panel">
+<div class="section-label">Загадай самое заветное</div><h2>Двадцать свечей - двадцать желаний</h2>
+<div class="cake">🎂</div>
+<p class="panel-intro">Пусть каждое желание найдёт дорогу к исполнению. Нажми на кнопку и задуй свечи ✨</p>
+<div class="candle-row" id="candles"></div>
+<button class="btn" id="blowBtn">Задуть свечи ✧</button>
+<p id="candleMessage" class="panel-intro" style="margin-top:17px;margin-bottom:0" aria-live="polite"></p>
+</section>
+</main>
+<footer class="footer">ПУСТЬ ТВОЯ ЗВЕЗДА ВСЕГДА СВЕТИТ ЯРКО ✦</footer>
+</div>
+<script>
+const sky=document.getElementById('sky');
+for(let i=0;i<95;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.setProperty('--dur',(1.5+Math.random()*3)+'s');s.style.animationDelay=(-Math.random()*4)+'s';sky.appendChild(s)}
+for(let i=0;i<2;i++){const sh=document.createElement('i');sh.className='shooting';sh.style.top=(12+i*29)+'%';sh.style.left=(65+i*12)+'%';sh.style.animationDelay=(i*5)+'s';sky.appendChild(sh)}
+// Countdown to November 25, 2026 (local time).
+const target=new Date(2026,10,25,0,0,0);
+function tick(){let diff=target-new Date();if(diff<=0){document.getElementById('countdown').innerHTML='<div class="timebox" style="padding:15px 25px"><b style="font-size:22px">Сегодня твой день! ✨</b><small>25 ноября</small></div>';return}
+const vals=[Math.floor(diff/86400000),Math.floor(diff/3600000)%24,Math.floor(diff/60000)%60,Math.floor(diff/1000)%60];['days','hours','minutes','seconds'].forEach((id,i)=>document.getElementById(id).textContent=String(vals[i]).padStart(2,'0'))}
+tick();setInterval(tick,1000);
+document.getElementById('openLetter').addEventListener('click',()=>{const l=document.getElementById('letter');l.classList.toggle('show');document.getElementById('openLetter').textContent=l.classList.contains('show')?'Спрятать письмо':'Открыть личное письмо ✧';if(l.classList.contains('show')){l.scrollIntoView({behavior:'smooth',block:'nearest'});burst()}});
+function burst(){for(let i=0;i<18;i++)setTimeout(()=>{const e=document.createElement('span');e.className='float';e.textContent=['✦','♡','✧','⋆'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(13+Math.random()*16)+'px';e.style.color=['#f2dba9','#f1c8df','#d9d2ff'][Math.floor(Math.random()*3)];e.style.animationDuration=(5+Math.random()*4)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),9500)},i*65)}
+document.getElementById('wishBtn').addEventListener('click',()=>{alert('Пусть твоё самое заветное желание обязательно сбудется. ✨');burst()});
+// Twenty candle flames.
+const candles=document.getElementById('candles');for(let i=0;i<20;i++){const c=document.createElement('span');c.className='candle';candles.appendChild(c)}
+document.getElementById('blowBtn').addEventListener('click',()=>{document.querySelectorAll('.candle').forEach((c,i)=>setTimeout(()=>c.classList.add('out'),i*55));document.getElementById('candleMessage').textContent='Пусть всё, о чём ты мечтаешь, однажды станет реальностью. С 20-летием! ♡';burst()});
+// Original soft ambient sound made with Web Audio - no external music files or copyrighted tracks.
+let audioCtx=null,master=null,oscillators=[],playing=false,interval=null;
+function startMusic(){const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;audioCtx=new AC();master=audioCtx.createGain();master.gain.value=.035;master.connect(audioCtx.destination);
+const notes=[220,261.63,329.63,392,329.63,261.63];let n=0;
+function playNote(){if(!audioCtx)return;const now=audioCtx.currentTime;const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=notes[n++%notes.length];gain.gain.setValueAtTime(0,now);gain.gain.linearRampToValueAtTime(.24,now+.7);gain.gain.exponentialRampToValueAtTime(.001,now+3.6);osc.connect(gain);gain.connect(master);osc.start(now);osc.stop(now+3.7);oscillators.push(osc)}
+playNote();interval=setInterval(playNote,1800);playing=true;document.getElementById('musicText').textContent='Выключить музыку';document.getElementById('musicBtn').setAttribute('aria-pressed','true')}
+function stopMusic(){if(interval)clearInterval(interval);if(master&&audioCtx){master.gain.setTargetAtTime(0,audioCtx.currentTime,.15);setTimeout(()=>{if(audioCtx){audioCtx.close();audioCtx=null;master=null}},500)}playing=false;document.getElementById('musicText').textContent='Включить музыку';document.getElementById('musicBtn').setAttribute('aria-pressed','false')}
+document.getElementById('musicBtn').addEventListener('click',()=>{if(playing)stopMusic();else startMusic()});
+</script>
+</body>
+</html>
